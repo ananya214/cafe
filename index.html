@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sip & Bloom Café</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Inter&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/a076d05399.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="site-border">
+      <!-- 🌿 Navbar -->
+
+      <header class="navbar">
+        <div class="cafe-logo">Sip & Bloom</div>
+        <nav class="nav-links">
+          <a href="#story">Our Story</a>
+          <a href="#menu">Menu</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#reviews">Reviews</a>
+          <a href="#contact">Contact</a>
+          <button id="mode-toggle" class="mode-toggle">
+            <i class="ri-moon-clear-line"></i>
+          </button>
+        </nav>
+      </header>
+
+      <!-- ✨ Hero Section -->
+      <!-- ✨ Hero Section (Image Left, Text Right) -->
+      <section class="hero">
+        <div class="hero-image">
+          <img
+            src="https://i.pinimg.com/736x/d6/b3/72/d6b372f8266f3ba75ee79a989dfedacc.jpg"
+            alt="Cafe ambiance"
+          />
+        </div>
+        <div class="hero-text">
+          <h1>Welcome to Sip & Bloom</h1>
+          <p>
+            A soft little hideaway where every cup blooms into comfort and calm.
+          </p>
+          <a href="#menu" class="hero-btn">Explore Menu</a>
+        </div>
+      </section>
+
+      <!-- 🌸 Our Story -->
+      <section class="story" id="story">
+        <div class="story-text">
+          <h2>Our Story</h2>
+          <p>
+            Once upon a quiet dream, Sip & Bloom was imagined as a little escape
+            — a space where time slows, conversations flow, and every cup feels
+            like a gentle hug to the soul.<br /><br />
+            We don’t just serve coffee — we serve moments. With floral aromas,
+            cozy corners, and a touch of poetry in every detail, we welcome you
+            into something soft, something warm, something yours.
+          </p>
+          <div class="signature">
+            With love,<br />
+            <span>Sip & Bloom</span>
+          </div>
+        </div>
+
+        <div class="story-image">
+          <img
+            src="https://i.pinimg.com/736x/b8/b2/65/b8b2656a24cce33dc75b8b676d1a7855.jpg"
+            alt="A cozy café moment"
+          />
+        </div>
+      </section>
+
+      <section class="menu-wrapper" id="menu">
+        <h2 class="menu-heading">Our Lovely Menu</h2>
+        <p class="menu-subtext">
+          Sip slowly, savor sweetly — curated with love and warmth.
+        </p>
+
+        <div class="menu-row">
+          <div class="menu-cat">
+            <h3>☕ Coffee</h3>
+            <ul>
+              <li>Espresso <span>$5</span></li>
+              <li>Double Espresso <span>$5</span></li>
+              <li>Latte <span>$5</span></li>
+              <li>Americano <span>$5</span></li>
+              <li>Macchiato <span>$5</span></li>
+              <li>Flat White <span>$5</span></li>
+              <li>Cappuccino <span>$5</span></li>
+            </ul>
+          </div>
+
+          <div class="menu-cat">
+            <h3>🥤 Non‑Coffee</h3>
+            <ul>
+              <li>Hot Chocolate <span>$5</span></li>
+              <li>Milkshake <span>$5</span></li>
+              <li>Smoothie <span>$5</span></li>
+              <li>Lemonade <span>$5</span></li>
+              <li>Vanilla Milkshake <span>$5</span></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="menu-row">
+          <div class="menu-cat">
+            <h3>🍃 Tea</h3>
+            <ul>
+              <li>Lemon Tea <span>$5</span></li>
+              <li>Mango Tea <span>$5</span></li>
+              <li>Jasmine <span>$5</span></li>
+              <li>Green Tea <span>$5</span></li>
+              <li>Mint Tea <span>$5</span></li>
+            </ul>
+          </div>
+
+          <div class="menu-cat">
+            <h3>🧁 Desserts</h3>
+            <ul>
+              <li>Strawberry Waffle <span>$5</span></li>
+              <li>Cinnamon Roll <span>$5</span></li>
+              <li>Lemon Pie <span>$5</span></li>
+              <li>Croissant <span>$5</span></li>
+              <li>Chocolate Muffin <span>$5</span></li>
+              <li>Brownies <span>$5</span></li>
+              <li>Cheesecake <span>$5</span></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="bestsellers-wrapper" id="bestsellers">
+        <h2 class="bestsellers-heading">Our Best Sellers</h2>
+        <p class="bestsellers-subtext">
+          Favorites loved by hearts and tastebuds alike.
+        </p>
+
+        <div class="bestsellers-grid">
+          <div class="bestseller-card">
+            <span class="badge">🌟 Most Loved</span>
+            <img
+              src="https://i.pinimg.com/736x/97/e8/f3/97e8f32e95c50a5243244cc89d57cec2.jpg"
+              alt="Latte Art"
+            />
+            <h3>Vanilla Latte</h3>
+            <p>Silky smooth espresso kissed with vanilla & milk.</p>
+          </div>
+
+          <div class="bestseller-card">
+            <img
+              src="https://i.pinimg.com/736x/5d/17/dd/5d17dd21260ddd189f972a9260de935f.jpg"
+              alt="Waffle"
+            />
+            <h3>Strawberry Waffle</h3>
+            <p>Golden waffle topped with fresh strawberries & whipped cloud.</p>
+          </div>
+
+          <div class="bestseller-card">
+            <img
+              src="https://i.pinimg.com/736x/64/bb/bc/64bbbc45a302b646abee022c00ca0c41.jpg"
+              alt="Iced Tea"
+            />
+            <h3>Lemon Iced Tea</h3>
+            <p>Crisp, refreshing tea with lemon zest — summer in a cup.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="pinterest-gallery" id="gallery">
+        <h2 class="gallery-title">Moments We Love</h2>
+        <p class="gallery-subtext">
+          Snapshots that smell like coffee & feel like poetry ☕
+        </p>
+
+        <div class="gallery-pins">
+          <img
+            src="https://i.pinimg.com/736x/05/2a/a3/052aa34b741d5abac952f49a32e39127.jpg"
+            alt="Seating"
+          />
+          <img
+            src="https://i.pinimg.com/736x/02/ee/f8/02eef893a79216d9753603917b5a38bf.jpg"
+            alt="Latte"
+          />
+          <img
+            src="https://i.pinimg.com/736x/e1/cd/79/e1cd7927eb864b96f11374f22b4205bc.jpg"
+            alt="Pastries"
+          />
+          <img
+            src="https://i.pinimg.com/736x/41/e2/c4/41e2c400b1bcd118b0dc559350430273.jpg"
+            alt="Table Coffee"
+          />
+          <img
+            src="https://i.pinimg.com/736x/7e/25/e9/7e25e977238032129dde4b3f6d5b02fc.jpg"
+            alt="Cafe Counter"
+          />
+          <img
+            src="https://i.pinimg.com/736x/cd/4a/e4/cd4ae4a84eb1e547bbba21dd69f77e7c.jpg"
+            alt="Lighting"
+          />
+          <img
+            src="https://i.pinimg.com/736x/87/9a/59/879a599e6873de82b82adb792a45d2d6.jpg"
+            alt="Dessert Flatlay"
+          />
+          <img
+            src="https://i.pinimg.com/736x/d0/2a/9b/d02a9b206cf92a722f8f135272a7b919.jpg"
+            alt="Chalkboard Sign"
+          />
+        </div>
+      </section>
+
+      <section class="testimonial-section" id="reviews">
+        <h2 class="testimonial-title">Kind Words from Our Guests</h2>
+        <p class="testimonial-subtext">
+          Sweet notes left behind like sugar in a teacup 🍯
+        </p>
+
+        <div class="testimonial-grid">
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              “The ambiance here is pure magic. I come for the coffee but stay
+              for the calm.”
+            </p>
+            <span class="testimonial-name">— Meera A.</span>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              “Their lavender latte changed my life. Literally felt hugged.”
+            </p>
+            <span class="testimonial-name">— Riya K.</span>
+          </div>
+          <div class="testimonial-card">
+            <p class="testimonial-text">
+              “I met my partner here... now it’s our forever spot.”
+            </p>
+            <span class="testimonial-name">— Anvi S.</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <h2 class="contact-title">
+          Come Sip with Us <i class="ri-drinks-line"></i>
+        </h2>
+        <p class="contact-subtext">
+          We’re always brewing joy and warm memories
+        </p>
+
+        <div class="contact-box">
+          <!-- Left: Contact Info -->
+          <div class="contact-info">
+            <h3>Find Us</h3>
+            <p>
+              <strong>Address:</strong><br />
+              123 Bloom Lane, Softville, Dreamstate
+            </p>
+            <p>
+              <strong>Hours:</strong><br />
+              Mon–Sun: 8AM – 9PM
+            </p>
+            <p>
+              <strong>Email:</strong><br />
+              hello@sipandbloom.cafe
+            </p>
+            <p>
+              <strong>Phone:</strong><br />
+              +91 98765 43210
+            </p>
+
+            <button class="contact-btn">Get Directions</button>
+          </div>
+
+          <!-- Right: Map Image -->
+          <div class="contact-map">
+            <img
+              src="https://i.pinimg.com/736x/a7/4d/90/a74d9040d75881eeae361ae11a65430c.jpg"
+              alt="Cute map to our café"
+            />
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
