@@ -647,8 +647,8 @@ body.dark .mode-toggle:hover {
   .pinterest-gallery,
   .testimonial-section,
   .contact-box {
-    padding-left: 2rem;
-    padding-right: 2rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
   .gallery-pins {
     column-count: 2;
@@ -661,7 +661,7 @@ body.dark .mode-toggle:hover {
   .story {
     flex-direction: column;
     gap: 2.5rem;
-    padding: 3rem 1.5rem;
+    padding: 2rem 1rem;
     text-align: center;
   }
   .hero-text,
@@ -679,12 +679,12 @@ body.dark .mode-toggle:hover {
   .pinterest-gallery,
   .testimonial-section,
   .contact-box {
-    padding: 2.5rem 1rem;
+    padding: 0;
   }
 }
 @media (max-width: 600px) {
   .navbar {
-    padding: 0.8rem 0.5rem;
+    padding: 0;
     gap: 0.4rem;
   }
 }
@@ -754,6 +754,10 @@ body.dark .mode-toggle:hover {
 
 /* Below 600px: logo centered, nav links horizontal, all centered, spacing reduced */
 @media (max-width: 600px) {
+  body {
+    padding: 0;
+    margin: 0;
+  }
   .navbar {
     flex-direction: column;
     align-items: center;
@@ -850,5 +854,89 @@ body.dark .mode-toggle:hover {
     padding: 0.5rem 0.1rem;
   }
 }
+@media (max-width: 400px) {
+  .hero {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.5rem;
+    padding: 1.2rem 0.6rem 2rem;
+  }
 
-/* --- REST OF YOUR EXISTING STYLES REMAIN AS IS --- */
+  .hero-image img {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 12px;
+    object-fit: cover;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+
+  .hero-text h1 {
+    font-size: 1.4rem;
+    line-height: 1.6;
+    margin-bottom: 0.5rem;
+  }
+
+  .hero-text p {
+    font-size: 0.95rem;
+    padding: 0 0.5rem;
+    line-height: 1.5;
+    color: #ddd;
+  }
+
+  .hero-btn {
+    font-size: 0.9rem;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    background-color: #a47e6a;
+    color: #fff;
+    text-decoration: none;
+    transition: background 0.3s ease;
+  }
+
+  .hero-btn:hover {
+    background-color: #8c6957;
+  }
+
+  /* Keep other site sections tidy */
+  .site-border,
+  .story,
+  .menu-wrapper,
+  .bestsellers-wrapper,
+  .pinterest-gallery,
+  .testimonial-section,
+  .contact-box {
+    padding: 0.8rem 0.5rem;
+  }
+
+  .nav-links a {
+    font-size: 0.75rem;
+    padding: 0.35rem 0.5rem;
+  }
+
+  .contact-title {
+    font-size: 1.2rem;
+    padding: 0.4rem 0.6rem;
+    text-align: center;
+  }
+
+  .gallery-pins {
+    column-count: 2;
+    column-gap: 0.5rem;
+    padding: 0.4rem 0.3rem;
+  }
+
+  .gallery-pins .pin {
+    break-inside: avoid;
+    margin-bottom: 0.5rem;
+    border-radius: 8px;
+    overflow: hidden;
+  }
+
+  .gallery-pins .pin img {
+    width: 100%;
+    display: block;
+    border-radius: 8px;
+  }
+}
